@@ -36,15 +36,17 @@ It's possible to bind a function to a message type by using these setter functio
 
 Here there is an example:
 ```python
+from Updater import Updater
+
 # create your function to handle a message type, in this case plain text
-def myTextHandler(bot, message, chat_id):
+def myTextHandler(bot, message, chat_id, text):
   # this function sends back the received message
-  bot.sendMessage(chat_id, 'Received this message: ' + message)
+  bot.sendMessage(chat_id, 'Received this text: ' + text)
 
 # instantiate the updater
 updater = Updater(bot_id)
 # bind the textHandler of the updater with your custom textHandler
-updater.textHandler(message, chat_id)
+updater.setTextHandler(myTextHandler)
 # lunch the updater
 updater.start()
 ```
