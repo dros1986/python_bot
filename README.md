@@ -3,15 +3,15 @@
 ## Setup ##
 1. Download Telegram on your mobile phone
 2. Create a new bot
-..i. Open a chat with @BotFather
-..ii. Send command /newbot
-..iii. When asked, insert a name and a username for your new bot
-..iv. BotFather sends you the token to access to your bot. Copy it on computer
+  1. Open a chat with @BotFather
+  2. Send command /newbot
+  3. When asked, insert a name and a username for your new bot
+  4. BotFather sends you the token to access to your bot. Copy it on computer
 2. Download this code on your computer
 3. Open the file matlab_example.py and change the bot_id variable by assigning the token previously taken
 4. Launch the script that will become the server of your telegram bot (requires python 3)
-..i. on Windows: python matlab_example.py
-..ii. on Ubuntu: python3 matlab_example.py
+  1. on Windows: python matlab_example.py
+  2. on Ubuntu: python3 matlab_example.py
 5. Test it by opening a chat with your just-created bot and send him a picture.
 
 ## Classes ##
