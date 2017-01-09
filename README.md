@@ -21,6 +21,8 @@ This class is used to make the basic operations such as receiving and sending te
 
 Example:
 ```python
+  from Bot import Bot
+  
   bot = Bot(bot_id)
   bot.sendMessage(chat_id, "This is a message")
 ```
