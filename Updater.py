@@ -39,8 +39,9 @@ class Updater:
                 message_id  = message['message_id']
                 # call right functors
                 if messageType == 'text':
-                    # distinguish between command and plain text
-                    print('text')
+                    # TODO: distinguish between command and plain text
+                    text = message['text']
+                    self.textHandler(self.bot, message, chat_id, text)
                 if messageType == 'photo':
                     local_filename = self.bot.getFile(u['message']['photo'][-1]['file_id'])
                     self.photoHandler(self.bot, message, chat_id, local_filename)
