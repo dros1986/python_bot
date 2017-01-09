@@ -15,7 +15,8 @@
 5. Test it by opening a chat with your just-created bot and send him a picture.
 
 ## Classes ##
-### Bot ### 
+
+### Bot ###
 This class is used to make the basic operations such as receiving and sending text messages and images, as well as documents and audio messages
 
 Example:
@@ -24,7 +25,7 @@ Example:
   bot.sendMessage(chat_id, "This is a message")
 ```
 
-## Updater ##
+### Updater ###
 The updater checks for updates and dispatches the type of message received to the specified function (if specified).
 It's possible to bind a function to a message type by using these setter functions:
 ```python
