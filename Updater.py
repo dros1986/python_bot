@@ -4,7 +4,7 @@ import json, os, sys
 import urllib
 import tempfile
 import requests
-from Bot import Bot
+from .Bot import Bot
 
 
 def doNothing(*arg):
@@ -21,7 +21,7 @@ class Updater:
 
     def setTextHandler(self, f):
         self.textHandler = f
-        
+
     def setPhotoHandler(self, f):
         self.photoHandler = f
 
